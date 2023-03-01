@@ -231,7 +231,7 @@
 
   .navbar-logo.logo {
     display: block;
-    width: 80px;
+    width: 90px;
     margin-right: 0;
     margin-left: 22px;
     order: 1;
@@ -246,7 +246,7 @@
 
   .navbar-logo.logo img {
     display: block;
-    width:80px;
+    width:90px;
     object-fit: contain;
   }
 }
