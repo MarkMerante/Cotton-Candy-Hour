@@ -15,6 +15,7 @@ import Flavours from './components/pages/Flavours'
 import Events from './components/pages/Events'
 import About from './components/pages/About'
 import ClassicProduct from './components/pages/ClassicProduct'
+import SpecialsProduct from './components/pages/SpecialsProduct'
 import CartSlideIn from './components/CartSlideIn'
 import Cart from './components/Cart'
 import Footer from './components/Footer'
@@ -49,6 +50,7 @@ function App() {
           <Route path='/shop' element={<Shop addToCart={addToCart}/>} />
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
           <Route path='/classic/:classicsID' element={<ClassicProduct addToCart={addToCart}/>} />
+          <Route path='/special/:specialsID' element={<SpecialsProduct addToCart={addToCart}/>} />
           <Route path='/services' element={<Services />} />
           <Route path='/services/special-occasions' element={<SpecialOccasions />} />
           <Route path='/services/fundraising' element={<Fundraising />} />

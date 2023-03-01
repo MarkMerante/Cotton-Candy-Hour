@@ -3,7 +3,6 @@ import '../../App.css'
 import './ClassicProduct.css'
 import {useNavigate, useParams} from 'react-router-dom'
 import classics from '../Classics'
-// import TabView from '../TabView'
 
 
 const ClassicProduct = ({ addToCart }) => {
@@ -31,11 +30,15 @@ const ClassicProduct = ({ addToCart }) => {
         if (selectedId !== "") {
             const selectedClassic = classics.find((classic) => classic.id === parseInt(selectedId));
             navigate(`/classic/${selectedClassic.id}`);
+            setSelectedPreview(selectedClassic.preview1);
         }
     };
 
     const handleAddToCart = () => {
-        addToCart(classicsProduct);
+        addToCart({
+            ...classicsProduct,
+            coverImg: `../${coverImg}`,
+        })
     }
 
     const [toggleState, setToggleState] = useState(1);
@@ -72,12 +75,6 @@ const ClassicProduct = ({ addToCart }) => {
                         Care Instructions
                         </button>
                     </div>
-
-                    {/* <div className="information">
-                        <h3>{title}</h3>
-                        <strong>{price}</strong>
-                    </div>
-                    <button>Add to Cart</button> */}
                     <div className="content-tabs">
                         <div
                             className={toggleState === 1 ? "content  active-content" : "content"}
@@ -117,7 +114,6 @@ const ClassicProduct = ({ addToCart }) => {
                     </div>
                 </div>
             </div>
-            {/* <TabView /> */}
         </div>
     )
 }
