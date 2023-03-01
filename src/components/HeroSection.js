@@ -7,8 +7,7 @@ import logo from '../images/logo1.png'
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <video src='/videos/Chi2.MP4' className='ChiHome' autoPlay={true} loop={false} muted={true} />
-            {/* <img src={logo} className="Logo" /> */}
+            <video src='/videos/Chi2.MP4' className='ChiHome' loop={false} muted={true} />
             <div className="hero-btns">
                 <Button 
                     className='btns' 
