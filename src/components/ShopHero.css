@@ -1,0 +1,45 @@
+@import url(//db.onlinewebfonts.com/c/36fda95b699fea73e18a8f2d1ad6a6c0?family=Amasis+MT);
+
+@font-face { 
+  font-family: "Amasis MT"; 
+  src: url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.eot"); 
+  src: url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.svg#Amasis MT") format("svg"); 
+}
+
+.classic-items{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1px;
+    justify-content: space-around;
+}
+
+.special-items{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 25px;
+    justify-content: space-around;
+}
+
+.shopHead {
+    background: linear-gradient(to right,#FAD4DF,#FAD4DF, #E4E4F0,#D9DAEE, #DBD2E7,#D9D1E9);
+    font-family: 'Amasis MT', sans-serif;
+    font-weight: 1000;
+    color: #ff1493;
+    margin-bottom: 1.5rem;
+}
+
+
+.shopHeader {
+    color: #ff1493;
+    margin: 2rem;
+    text-align: center;
+}
+
+.shopHeader > h1, .shopHeader > h5 {
+    font-family: 'Amasis MT', sans-serif;
+}
+
+.shopHeader > h1 {
+    font-size: 2.4rem;
+}
+

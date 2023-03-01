@@ -1,0 +1,33 @@
+.special-occasions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 25vh;
+}
+
+.special-occasions-intro {
+    width:80%;
+    margin-bottom: 3rem;
+}
+
+.special-occasions-intro h1{
+    color:#ff1493;
+}
+
+.special-occasions-catering {
+    width: 80%;
+}
+
+.special-occasions-catering-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.special-occasions-catering-intro h2{
+    color:#ff1493;
+}
+
+.special-occasions-catering-intro:nth-child(3){
+    width: 3px;
+}

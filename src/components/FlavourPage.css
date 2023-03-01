@@ -1,0 +1,60 @@
+.mainPage {
+    /* height: 120vh; */
+}
+
+.menuType {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.container {
+    position: relative;
+    height: 260vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+.container .specialty-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+
+.classics, .specials {
+    justify-content: center;
+    width: 35rem;
+    height: 25rem;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    text-align: center;
+}
+
+.classics {
+    background-color: #CC85F8;
+}
+
+.specials {
+    background-color: #276DE6;
+}
+
+@media screen and (max-width: 630px) {
+    .menuType {
+        display: block;
+        padding: 5em;
+    }
+}

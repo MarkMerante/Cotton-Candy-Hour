@@ -1,0 +1,112 @@
+.cart-slide-in {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 80px;
+  width: 25%;
+  height: calc(100% - 80px);
+  background-color: #ffc0cb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+  overflow-y: scroll;
+}
+
+.cart-slide-in.show {
+  transform: translateX(0);
+}
+
+.cart-slide-in h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-slide-in ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.view-cart {
+  display: flex;
+  margin-top: 1px;
+  height: 30px;
+  padding: 2px 15px;
+  border: 1px solid #ff1493;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-cart button {
+  cursor: pointer;
+  color: #ff1493;
+}
+
+.view-cart:hover {
+  transform: scale(1.05);
+}
+
+.cart-slide-in li {
+  /* display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd; */
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.cart-slide-in .delete-btn {
+  cursor: pointer;
+}
+
+.cart-slide-in .item-image-container {
+  width: 30%;
+  height: auto;
+  text-align: center;
+}
+
+.cart-slide-in .item-image-container img {
+  width: 5rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.cart-slide-in .item-details {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-slide-in .item-title {
+  margin-bottom: 10px;
+}
+
+.cart-slide-in p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1050px) {
+  .cart-slide-in {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .cart-slide-in {
+    width: 60%;
+  }
+}
