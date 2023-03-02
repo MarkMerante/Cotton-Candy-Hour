@@ -8,7 +8,7 @@ const ServicesHero = () => {
         <div className='services-hero-container'>
             <div className='services-intro'>
                 <h1>SERVICES</h1>
-                <p>We often get the question, "What's your business about?". We offer a variety of services and personalize them ino what we think would be best for each of our customers!</p>
+                <p>We often get the question, "What's your business about?". We offer a variety of services and personalize them into what we think would be best for each of our customers!</p>
                 <br />
                 <br />
                 <p>Our main inquiries fall into the following categories:</p>
