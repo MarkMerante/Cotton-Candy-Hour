@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import './Cart.css'
 
 const Cart = ({ cart, removeFromCart }) => {
@@ -9,6 +10,43 @@ const Cart = ({ cart, removeFromCart }) => {
     })
     return total
   }
+
+  const handleInvoice = () => {
+    const items = cart.map((item) => {
+      return {
+        title: item.title,
+        price: item.price,
+      };
+    });
+  
+    const emailBody = JSON.stringify({
+      items: items,
+      totalPrice: totalPrice(),
+    });
+  
+    // const emailApiUrl = 'http://127.0.0.1:8000/send-invoice/'; testing //
+
+    const emailApiUrl = 'https://cchback.azurewebsites.net/send-invoice/'
+  
+    axios
+      .post(emailApiUrl, emailBody, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .then((response) => {
+        if (response.status === 200) {
+          alert('Invoice request sent successfully!');
+        } else {
+          throw new Error('Failed to send email');
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        alert('Failed to send invoice request. Please try again later.');
+      });
+  };
+
 
   return (
     <div className="cart-container">
@@ -28,7 +66,7 @@ const Cart = ({ cart, removeFromCart }) => {
         ))}
       </ul>
       <p className="cart-total-price">Total Price: ${totalPrice()}</p>
-      <button className="cart-proceed-btn">Invoice Me</button>
+      <button onClick={handleInvoice} className="cart-proceed-btn">Invoice Me</button>
     </div>
   );
 };
