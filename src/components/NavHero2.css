@@ -1,0 +1,34 @@
+.nav-hero-2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.second-logo {
+    width: 100%;
+    background: linear-gradient(to right, #FAD4DF, #FAD4DF, #E4E4F0, #D9DAEE, #DBD2E7, #D9D1E9);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-logo img {
+    max-width: 25%;
+    height: 10%;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .second-logo img {
+        max-width: 40%;
+    }
+}
+
+

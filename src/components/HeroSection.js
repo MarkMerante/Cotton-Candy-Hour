@@ -1,22 +1,14 @@
-import React from 'react'
+import React, {useState,useEffect,useRef} from 'react'
 import '../App.css'
-import {Button} from './Button'
 import './HeroSection.css'
-import logo from '../images/logo1.png'
+import HomeHero from '../images/home-hero2.PNG'
+import HomeHeroVid from '../images/home-hero.MP4'
 
 function HeroSection() {
     return (
         <div className='hero-container'>
-            <img src='/images/home-hero.jpg' className='ChiHome'  />
-            <div className="hero-btns">
-                <Button 
-                    className='btns' 
-                    buttonStyle='btn--outline'
-                    buttonSize='btn--large'
-                >
-                    GET STARTED
-                </Button>
-            </div>
+            <video autoPlay muted={true} loop={true} src={HomeHeroVid} />
+            <img src={HomeHero} className='ChiHome' alt="Hero Image" />
         </div>
     )
 }

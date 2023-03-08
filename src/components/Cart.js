@@ -24,9 +24,9 @@ const Cart = ({ cart, removeFromCart }) => {
       totalPrice: totalPrice(),
     });
   
-    // const emailApiUrl = 'http://127.0.0.1:8000/send-invoice/' // testing //
+    const emailApiUrl = 'http://127.0.0.1:8000/send-invoice/' // testing //
 
-    const emailApiUrl = 'https://cchback.azurewebsites.net/send-invoice/'
+    // const emailApiUrl = 'https://cchback.azurewebsites.net/send-invoice/'
   
     axios
       .post(emailApiUrl, emailBody, {

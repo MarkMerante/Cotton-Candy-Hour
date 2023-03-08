@@ -1,14 +1,4 @@
-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-}
-
 .hero-container {
-    /* background: url('videos/video1.mp4'); */
     position: relative;
     height: 97vh;
     max-height: calc(100vw / 1.5);
@@ -17,29 +7,25 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: cover;
 }
 
-.cchFlavour, .cchEvents{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+@media screen and (min-width: 1000px) {
+    .hero-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .hero-container img {
+        display: none;
+    }
 }
 
-.hero-container  .classics-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120vh;
-    object-fit: fill;
-}
-
-.hero-container  .ChiHome {
+/* .hero-container  .ChiHome {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,56 +33,20 @@ video {
     height: 100%;
     aspect-ratio: 1/1;
     object-fit: fill;
-}
+} */
 
-.hero-container > .Logo {
-    color: #fff;
-    text-align: center;
-    height: 25rem;
-    margin-top: -100px;
-}
-
-.hero-container > p {
-    margin-top: 8px;
-    text-align: center;
-    color: #fff;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.specialty-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.hero-btns {
-    margin-top:32px;
-}
-
-.hero-btns .btn {
-    margin: 6px;
-}
-
-.fa-play-circle {
-    margin-left: 4px;
-}
-
-@media screen and (max-width: 960px) {
-    .hero-container > .Logo {
-        color: #fff;
-        font-size: 70px;
-        margin-top: -150px;
+@media screen and (max-width: 999px) {
+    .hero-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        object-fit: fill;
+    }
+    
+    .hero-container video {
+        display: none;
     }
 }
-
-@media screen and (max-width: 768px) {
-    .hero-container > h1 {
-        color: #fff;
-        font-size: 70px;
-        margin-top: -150px;
-    }
-}
-
