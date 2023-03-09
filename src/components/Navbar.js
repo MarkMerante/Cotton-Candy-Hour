@@ -66,7 +66,7 @@ const Navbar = ({size, handleClick1}) => {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/aboutUs' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 Contact
                             </Link>
                         </li>

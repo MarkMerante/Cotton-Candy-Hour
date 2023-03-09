@@ -14,6 +14,7 @@ import FAQ from './components/pages/FAQ'
 import Flavours from './components/pages/Flavours'
 import Events from './components/pages/Events'
 import About from './components/pages/About'
+import Contact from './components/pages/Contact'
 import ClassicProduct from './components/pages/ClassicProduct'
 import SpecialsProduct from './components/pages/SpecialsProduct'
 import CartSlideIn from './components/CartSlideIn'
@@ -59,6 +60,7 @@ function App() {
           <Route path='/flavours' element={<Flavours />} />
           <Route path='/events' element={<Events />} />
           <Route path='/aboutUs' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <CartSlideIn isOpen={isOpen} handleClick1={handleClick1} cart={cart} removeFromCart={removeFromCart}/>
         <Footer />

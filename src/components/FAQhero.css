@@ -1,0 +1,104 @@
+@import url(//db.onlinewebfonts.com/c/36fda95b699fea73e18a8f2d1ad6a6c0?family=Amasis+MT);
+
+@font-face { 
+  font-family: "Amasis MT"; 
+  src: url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.eot"); 
+  src: url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.svg#Amasis MT") format("svg"); 
+}
+
+.FAQ-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amasis MT', sans-serif;
+}
+
+.FAQ-container h1,h3,h4,p {
+    font-family: 'Amasis MT', sans-serif;
+}
+
+.FAQ-container h1,h3 {
+    font-weight: 1300;
+}
+
+.FAQ-intro{
+    text-align: center;
+    font-family: 'Amasis MT', sans-serif;
+    margin: 3em 0
+}
+
+.FAQ-intro h1{
+    color: #ff1493;
+    font-size: 3rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.question h3{
+    color: #ff1493;
+}
+
+a {
+    text-decoration: none;
+}
+
+.FAQ-questions {
+    width: 90%;
+}
+
+.fa-plus, .fa-minus{
+    font-weight: bolder;
+    font-size: 1.3em;
+    margin-right: .6em;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.question-visible {
+    cursor: pointer;
+    background: #D7DAF9;
+    padding: .3em;
+    border-radius: 5px;
+    margin-bottom: .5em;
+}
+
+.question-visible.active + .hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -.8em .5em 2em;
+    border: 3px solid #D7DAF9;
+    border-radius: 0 0 30px 30px;
+}
+
+.question-content, .question-content-details {
+    margin: .7em .7em;
+}
+
+.related-links{
+    margin-top: 2em;
+}
+
+.p-links{
+    cursor: pointer;
+    color: #551A8B;
+    font-weight: bold;
+}
+
+.FAQ-contact {
+    margin: 4em 0 2em;
+}
+
+@media screen and (max-width: 570px) {
+    .FAQ-questions {
+        width: 98%;
+    }
+}
