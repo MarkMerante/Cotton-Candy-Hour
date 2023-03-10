@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .about-hero-intro {
@@ -14,6 +15,10 @@
     grid-template-columns: 1fr;
 }
 
+.phone {
+    display:none;
+}
+
 .laptop-images {
     width: 100%;
 }
@@ -21,4 +26,19 @@
 .about-hero-intro h1 {
     color: #ff1493;
     text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    .laptop {
+        display: none;
+    }
+    
+    .phone {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .phone-images {
+        width:100%;
+    }
 }
