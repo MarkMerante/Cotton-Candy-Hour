@@ -1,0 +1,24 @@
+.about-hero-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-hero-intro {
+    margin: 3em
+}
+
+.laptop {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.laptop-images {
+    width: 100%;
+}
+
+.about-hero-intro h1 {
+    color: #ff1493;
+    text-align: center;
+}
