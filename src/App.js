@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { BrowserRouter as Router,Routes,Route,useLocation } from 'react-router-dom'
 import { v4 as uuidv4 } from 'uuid'
 import './App.css'
 
@@ -20,6 +20,16 @@ import SpecialsProduct from './components/pages/SpecialsProduct'
 import CartSlideIn from './components/CartSlideIn'
 import Cart from './components/Cart'
 import Footer from './components/Footer'
+
+function ScrollToTopOnPageChange() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 
 function App() {
@@ -46,6 +56,7 @@ function App() {
     <>
       <Router>
         <Navbar size={cart.length} handleClick1={handleClick1}/>
+        <ScrollToTopOnPageChange />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop addToCart={addToCart}/>} />
