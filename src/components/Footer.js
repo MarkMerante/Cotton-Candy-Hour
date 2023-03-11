@@ -7,15 +7,12 @@ function Footer() {
     return (
         <div className='footer-container'>
             <div className='footer-links'>
-                <div className='footer-information'>
-                    <p>Local business based in Winnipeg, Manitoba.</p>
-                    <p>We offer pre-packaged tubs and cotton candy services! All cotton candy are freshly made the day of pickup, delivery, or event date.</p>
-                </div>
                 <section className="footer-subscription">
-                    <p className="footer-subscription-heading">
+                    <p id="footer-subscription-heading">
                         Contact Us
                     </p>
                 </section>
+                <Email />
                 <section class='social-media'>
                     <div class='social-media-wrap'>
                         <div class='social-icons'>
@@ -35,19 +32,27 @@ function Footer() {
                             >
                                 <i class='fab fa-instagram' />
                             </Link>
-                            <Link
-                                class='social-icon-link linkedin'
-                                to='/'
+                            <a
+                                className='social-icon-link email'
+                                href='mailto:chi@cottoncandyhour.com'
                                 target='_blank'
-                                aria-label='LinkedIn'
+                                rel='noopener noreferrer'
+                                aria-label='Email'
                             >
-                                <i class='fab fa-linkedin' />
-                            </Link>
+                                <i class='fa fa-envelope' />
+                            </a>
                         </div>
                     </div>
                 </section>
             </div>
-            <Email />
+            <div className='footer-information'>
+                <p id='cursive-p'>Thank you for your interest in Chi's Cotton Candy Hour</p>
+                <p id='cursive-che'>Cheerie-Ann</p>
+                <div className='credits'>
+                    <p id='legal'>Chi's Cotton Candy Hour © 2023</p>
+                    <p>Developed by Mark Merante</p> 
+                </div>
+            </div>
         </div>
     )
 }

@@ -93,10 +93,12 @@
 
 .cart-slide-in .item-title {
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .cart-slide-in p {
   margin: 0;
+  font-family: 'PT Sans', Arial, 'Trebuchet MS', sans-serif, sans-serif;
 }
 
 @media screen and (max-width: 1050px) {

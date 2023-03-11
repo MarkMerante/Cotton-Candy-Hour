@@ -6,11 +6,16 @@
   src: url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.woff") format("woff"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/36fda95b699fea73e18a8f2d1ad6a6c0.svg#Amasis MT") format("svg"); 
 }
 
+.classic {
+    margin-bottom: 2em;
+}
+
 .classic-items{
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 1px;
+    grid-gap: 1.8em;
     justify-content: space-around;
+    margin: auto 2em;
 }
 
 .special-items{
@@ -18,6 +23,7 @@
     grid-template-columns: repeat(3, auto);
     grid-gap: 25px;
     justify-content: space-around;
+    margin: auto 2em;
 }
 
 .shopHead {
@@ -25,14 +31,19 @@
     font-family: 'Amasis MT', sans-serif;
     font-weight: 1000;
     color: #ff1493;
+    padding: .5em;
     margin-bottom: 1.5rem;
 }
 
 
 .shopHeader {
     color: #ff1493;
-    margin: 2rem;
+    margin: 5rem;
     text-align: center;
+}
+
+.shopHeader > h5 {
+    color: black;
 }
 
 .shopHeader > h1, .shopHeader > h5 {

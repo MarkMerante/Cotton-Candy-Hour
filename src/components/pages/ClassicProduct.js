@@ -9,10 +9,10 @@ const ClassicProduct = ({ addToCart }) => {
     const navigate = useNavigate()
     const { classicsID } = useParams()
     const classicsProduct = classics.find(classic => classic.id === parseInt(classicsID))
-    const {id, title, coverImg, description, preview1, preview2, price} = classicsProduct
+    const {title, coverImg, description, preview2, price} = classicsProduct
     const [selectedOption, setSelectedOption] = useState(null);
 
-    const [selectedPreview, setSelectedPreview] = useState(preview1);
+    const [selectedPreview, setSelectedPreview] = useState(preview2);
 
     const handlePreviewClick = (preview) => {
         setSelectedPreview(preview);
@@ -30,7 +30,7 @@ const ClassicProduct = ({ addToCart }) => {
         if (selectedId !== "") {
             const selectedClassic = classics.find((classic) => classic.id === parseInt(selectedId));
             navigate(`/classic/${selectedClassic.id}`);
-            setSelectedPreview(selectedClassic.preview1);
+            setSelectedPreview(selectedClassic.preview2);
         }
     };
 
@@ -52,10 +52,10 @@ const ClassicProduct = ({ addToCart }) => {
             <div className="Classic-Product-Container">
                 <div className="images-container">
                     <div className="images">
-                        <img src={`../${selectedPreview}`} className="classicsImg" />
+                        <img src={`../${selectedPreview}`} className="classicsImg" alt="classic-products-main"/>
                         <div className="preview-images">
-                            <img src={`../${preview1}`} className="preview-img" onClick={() => handlePreviewClick(preview1)} />
-                            <img src={`../${preview2}`} className="preview-img" onClick={() => handlePreviewClick(preview2)} />
+                            {/* <img src={`../${preview1}`} className="preview-img" onClick={() => handlePreviewClick(preview1)} /> */}
+                            <img src={`../${preview2}`} className="preview-img" onClick={() => handlePreviewClick(preview2)} alt="classic-products-images"/>
                         </div>
                     </div>
                 </div>

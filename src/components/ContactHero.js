@@ -34,7 +34,7 @@ const ContactHero = () => {
                     <h4>Contact Form</h4>
                     <div className="content">
                         <h4 className="bolded-content">Website:</h4>
-                        <p>Use the message box below</p>
+                        <p>Use the <a href='#footer-subscription-heading'>message box</a> below</p>
                     </div>
                 </div>
             </div>
@@ -49,6 +49,7 @@ const ContactHero = () => {
             <div className="outro">
                 <h4> We'd love to hear from you!</h4>
                 <p>Thank you for your interest in Chi's Cotton Candy Hour.</p>
+                
             </div>
         </div>
     )

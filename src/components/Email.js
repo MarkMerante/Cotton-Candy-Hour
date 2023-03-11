@@ -34,6 +34,7 @@ const Email = () => {
           placeholder='Subject'
           name='subject' required />
           <textarea name="message"
+          placeholder={`Details (Please include as much information as possible to receive an accurate quote or response)\n\neg. event type, service type, event date, event venue, event time, # of guests estimate, flavour(s) wanted, etc.`}
           cols="30" rows="10" />
           <button type='submit'
           className="form-button">Send Message</button>

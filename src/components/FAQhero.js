@@ -154,7 +154,7 @@ const FAQhero = () => {
                 </div>
             </div>
             <div className="FAQ-contact">
-                <h3>Still have questions? Ask us directly!</h3>
+                <h3>Still have questions? <a href='#footer-subscription-heading'>Ask us directly!</a></h3>
             </div>
         </div>
     )

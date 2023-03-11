@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-p {
+.contact-hero-container p {
     text-indent: .3em;
 }
 
@@ -39,6 +39,11 @@ p {
     justify-content: center;
     padding: 0;
     color: inherit;
+}
+
+.contact-details div.content a {
+    font-family: Arial,'Lucida Sans Unicode','Trebuchet MS','Lucida Grande',   sans-serif, 'Lucida Sans';
+    font-weight: bold;
 }
 
 .contact-details div.content p {
