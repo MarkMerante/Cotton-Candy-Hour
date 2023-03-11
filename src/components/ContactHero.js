@@ -10,12 +10,12 @@ const ContactHero = () => {
                 <h3>CONTACT US</h3>
                 <div className="contact-details">
                     <h4>Email</h4>
-                    <div className="content">
-                        <h4 className="bolded-content">Inquiry: </h4>
+                    <div className="content" onClick={() => window.location.href = "mailto:chi@cottoncandyhour.com"}>
+                        <h4 className="bolded-content bold-email" onClick={() => window.location.href = "mailto:chi@cottoncandyhour.com"}>Inquiry: </h4>
                         <p>chi@cottoncandyhour.com</p>
                     </div>
-                    <div className="content">
-                        <h4 className="bolded-content">Orders: </h4>
+                    <div className="content" onClick={() => window.location.href = "mailto:orders@cottoncandyhour.com"}>
+                        <h4 className="bolded-content bold-email" onClick={() => window.location.href = "mailto:orders@cottoncandyhour.com"}>Orders: </h4>
                         <p>orders@cottoncandyhour.com</p>
                     </div>
                 </div>
