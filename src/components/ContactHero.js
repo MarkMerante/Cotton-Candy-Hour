@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./ContactHero.css"
 import Weekday from "../images/weekday_calender.PNG"
 import Weekend from "../images/weekend_calendar.PNG"
@@ -22,14 +21,14 @@ const ContactHero = () => {
                 </div>
                 <div className="contact-details">
                     <h4>Social Media</h4>
-                    <Link to='https://www.facebook.com/profile.php?id=100088423180662' className="content">
+                    <div className="content" onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100088423180662'}>
                         <h4 className="bolded-content social">Facebook: </h4>
                         <p>/chicottoncandyhour</p>
-                    </Link>
-                    <Link to='https://www.instagram.com/cottoncandyhour' className="content">
+                    </div>
+                    <div className="content" onClick={() => window.location.href = 'https://www.instagram.com/cottoncandyhour'}>
                         <h4 className="bolded-content social">Instagram: </h4>
                         <p>cottoncandyhour</p>
-                    </Link>
+                    </div>
                 </div>
                 <div className="contact-details">
                     <h4>Contact Form</h4>

@@ -15,7 +15,7 @@ p {
     text-indent: .3em;
 }
 
-.contact-hero-intro, .content-details{
+.contact-hero-intro{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -27,17 +27,28 @@ p {
     margin: 3em 0;
 }
 
+.contact-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
 
-.content {
+.contact-details div.content {
     display: flex;
     justify-content: center;
     padding: 0;
     color: inherit;
 }
 
+.contact-details div.content p {
+    margin-bottom: 0;
+}
+
 .social {
     text-decoration: underline;
     transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 .social:hover {
