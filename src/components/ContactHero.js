@@ -8,24 +8,24 @@ const ContactHero = () => {
         <div className="contact-hero-container">
             <div className="contact-hero-intro">
                 <h3>CONTACT US</h3>
-                <div className="contact-details">
+                <div className="contact-details ">
                     <h4>Email</h4>
-                    <div className="content" onClick={() => window.location.href = "mailto:chi@cottoncandyhour.com"}>
+                    <div className="content email" onClick={() => window.location.href = "mailto:chi@cottoncandyhour.com"}>
                         <h4 className="bolded-content bold-email" onClick={() => window.location.href = "mailto:chi@cottoncandyhour.com"}>Inquiry: </h4>
                         <p>chi@cottoncandyhour.com</p>
                     </div>
-                    <div className="content" onClick={() => window.location.href = "mailto:orders@cottoncandyhour.com"}>
+                    <div className="content email" onClick={() => window.location.href = "mailto:orders@cottoncandyhour.com"}>
                         <h4 className="bolded-content bold-email" onClick={() => window.location.href = "mailto:orders@cottoncandyhour.com"}>Orders: </h4>
                         <p>orders@cottoncandyhour.com</p>
                     </div>
                 </div>
                 <div className="contact-details">
                     <h4>Social Media</h4>
-                    <div className="content" onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100088423180662'}>
+                    <div className="content socials" onClick={() => window.location.href = 'https://www.facebook.com/profile.php?id=100088423180662'}>
                         <h4 className="bolded-content social">Facebook: </h4>
                         <p>/chicottoncandyhour</p>
                     </div>
-                    <div className="content" onClick={() => window.location.href = 'https://www.instagram.com/cottoncandyhour'}>
+                    <div className="content socials" onClick={() => window.location.href = 'https://www.instagram.com/cottoncandyhour'}>
                         <h4 className="bolded-content social">Instagram: </h4>
                         <p>cottoncandyhour</p>
                     </div>

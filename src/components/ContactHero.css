@@ -45,13 +45,14 @@ p {
     margin-bottom: 0;
 }
 
-.social, .bold-email {
+
+.email, .socials {
     text-decoration: underline;
     transition: all 0.3s ease-out;
     cursor: pointer;
 }
 
-.social:hover, .bold-email:hover {
+.email:hover, .socials:hover {
     transform: scale(1.05);
 }
 
