@@ -1,10 +1,11 @@
 import React from 'react'
 import '../../App.css'
+import ContactHero from "../ContactHero"
 
 function Contact() {
     return (
         <>
-            <h1>Contact Page</h1>
+            <ContactHero />
         </>
     )
 }

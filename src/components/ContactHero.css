@@ -1,0 +1,122 @@
+.contact-hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero-container h3, .contact-hero-container h4,.contact-hero-container p {
+    font-family: Arial,'Lucida Sans Unicode','Trebuchet MS','Lucida Grande',   sans-serif, 'Lucida Sans';
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    text-indent: .3em;
+}
+
+.contact-hero-intro, .content-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-hero-intro {
+    gap: 1em;    
+    margin: 3em 0;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: inherit;
+}
+
+.social {
+    text-decoration: underline;
+    transition: all 0.3s ease-out;
+}
+
+.social:hover {
+    transform: scale(1.05);
+}
+
+.calendar-container {
+    border: 2px solid #6D6D6D;
+    border-radius: 2px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-container-contents {
+    margin: 3em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.calendar-img {
+    width: 60%;
+    margin: -1.2em auto;
+
+}
+
+.calendar-container-contents p {
+    font-style: italic;
+    font-size: .8em;
+}
+
+.calendar-container-contents > :nth-child(3) {
+    margin: -3em auto 0;
+}
+
+.outro {
+    margin:3em
+}
+
+.outro p {
+    font-size: .8em;
+}
+
+@media screen and (min-width: 501px) and (max-width: 950px) {
+    .calendar-container-contents > :nth-child(4) {
+        width: 80%;
+        margin: 0 auto
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px) {
+    .calendar-container-contents > :nth-child(3) {
+        margin: -1.5em auto 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .calendar-img {
+        width: 80%;
+        margin: -1em auto;
+    
+    }
+
+    .calendar-container-contents > :nth-child(3) {
+        margin: -1.5em auto 0;
+    }
+
+    .calendar-container-contents > :nth-child(4) {
+        width: 80%;
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .calendar-container-contents > :nth-child(3) {
+        margin: 0 auto;
+    }
+}
