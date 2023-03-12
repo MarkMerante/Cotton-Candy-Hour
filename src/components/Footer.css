@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'MoonTime Regular';
-    src: url("C:/Users/markm/AppData/Local/Microsoft/Windows/Fonts/FontsFree-Net-MoonTime-Regular-1.ttf") format('truetype');
+    src: url("../fonts/FontsFree-Net-MoonTime-Regular-1.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Apricot';
-    src: url("C:/Users/markm/AppData/Local/Microsoft/Windows/Fonts/Apricot Regular.ttf") format('truetype');
+    src: url("../fonts/Apricot Regular.ttf") format('truetype');
 }
 
 .footer-container {
