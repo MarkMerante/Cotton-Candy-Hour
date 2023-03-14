@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import './Cart.css'
+import InvoiceForm from './InvoiceForm';
+import { Navigate } from 'react-router-dom'
 
-const Cart = ({ cart, removeFromCart }) => {
+const Cart = ({ cart, removeFromCart, clearCart }) => {
   const totalPrice = () => {
     let total = 0;
     cart.forEach((item) => {
@@ -11,22 +13,36 @@ const Cart = ({ cart, removeFromCart }) => {
     return total
   }
 
-  const handleInvoice = () => {
+  const [showInvoiceForm, setShowInvoiceForm] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const handleInvoiceClick = () => {
+    if (cart.length === 0) {
+      alert('Please add items to your cart before proceeding to invoice.');
+    } else {
+      setShowInvoiceForm(true)
+    }
+  }
+  const handleInvoiceFormClose = () => setShowInvoiceForm(false);
+
+  const handleInvoice = (userInput) => {
     const items = cart.map((item) => {
       return {
         title: item.title,
         price: item.price,
-      };
-    });
+      }
+    })
   
     const emailBody = JSON.stringify({
       items: items,
       totalPrice: totalPrice(),
-    });
+      firstName: userInput.firstName,
+      lastName: userInput.lastName,
+      email: userInput.email,
+    })
   
-    const emailApiUrl = 'http://127.0.0.1:8000/send-invoice/' // testing //
+    // const emailApiUrl = 'http://127.0.0.1:8000/send-invoice/' // testing //
 
-    // const emailApiUrl = 'https://cchback.azurewebsites.net/send-invoice/'
+    const emailApiUrl = 'https://cchback.azurewebsites.net/send-invoice/'
   
     axios
       .post(emailApiUrl, emailBody, {
@@ -36,9 +52,11 @@ const Cart = ({ cart, removeFromCart }) => {
       })
       .then((response) => {
         if (response.status === 200) {
-          alert('Invoice request sent successfully!');
+          setShowInvoiceForm(false)
+          setShowSuccessMessage(true)
+          clearCart()
         } else {
-          throw new Error('Failed to send email');
+          throw new Error('Failed to send email')
         }
       })
       .catch((error) => {
@@ -66,7 +84,18 @@ const Cart = ({ cart, removeFromCart }) => {
         ))}
       </ul>
       <p className="cart-total-price">Total Price: ${totalPrice()}</p>
-      <button onClick={handleInvoice} className="cart-proceed-btn">Invoice Me</button>
+      {!showInvoiceForm && (
+        <button onClick={handleInvoiceClick} className="cart-proceed-btn">Invoice Me</button>
+      )}
+      {showInvoiceForm && (
+        <div className="invoice-form-overlay">
+          <div className="invoice-form-wrapper">
+            <InvoiceForm handleInvoice={handleInvoice} handleInvoiceFormClose={handleInvoiceFormClose} />
+          </div>
+        </div>
+      )}
+
+      {showSuccessMessage && <Navigate to="/confirmation" />}
     </div>
   );
 };

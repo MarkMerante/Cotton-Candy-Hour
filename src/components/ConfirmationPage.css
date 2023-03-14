@@ -1,0 +1,43 @@
+.confirmation-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+  
+.confirmation-page-intro > h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ff1493;
+    text-align: center;
+}
+  
+.confirmation-page-intro > p {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem
+}
+
+.confirmation-button {
+    display: flex;
+    margin-top: 1px;
+    height: 30px;
+    padding: 2px 15px;
+    border: 1px solid #ff1493;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+  

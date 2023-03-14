@@ -19,6 +19,7 @@ import ClassicProduct from './components/pages/ClassicProduct'
 import SpecialsProduct from './components/pages/SpecialsProduct'
 import CartSlideIn from './components/CartSlideIn'
 import Cart from './components/Cart'
+import ConfirmationPage from './components/ConfirmationPage'
 import Footer from './components/Footer'
 
 function ScrollToTopOnPageChange() {
@@ -47,6 +48,11 @@ function App() {
   const removeFromCart = (id) => {
     setCart(prevCart => prevCart.filter(item => item.id !== id))
   }
+  
+  const clearCart = () => {
+    setCart([]);
+    localStorage.removeItem('cart');
+  }
 
   const handleClick1 = () => {
     setIsOpen(!isOpen);
@@ -60,7 +66,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/shop' element={<Shop addToCart={addToCart}/>} />
-          <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+          <Route path='/confirmation' element={<ConfirmationPage />} />
+          <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} clearCart={clearCart}/>} />
           <Route path='/classic/:classicsID' element={<ClassicProduct addToCart={addToCart}/>} />
           <Route path='/special/:specialsID' element={<SpecialsProduct addToCart={addToCart}/>} />
           <Route path='/services' element={<Services />} />
