@@ -40,8 +40,8 @@ function App() {
 
   const addToCart = (item) => {
     setCart((prevCart) => {
-      const newItem = { ...item, id: uuidv4() };
-      return [...prevCart, newItem];
+      const newItem = { ...item, id: uuidv4() }
+      return [...prevCart, newItem]
     })
   }
 
@@ -50,12 +50,12 @@ function App() {
   }
   
   const clearCart = () => {
-    setCart([]);
+    setCart([])
     localStorage.removeItem('cart');
   }
 
   const handleClick1 = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isOpen)
   }
 
   return (
@@ -80,7 +80,7 @@ function App() {
           <Route path='/aboutUs' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        <CartSlideIn isOpen={isOpen} handleClick1={handleClick1} cart={cart} removeFromCart={removeFromCart}/>
+        <CartSlideIn isOpen={isOpen} handleClick1={handleClick1} cart={cart} removeFromCart={removeFromCart} />
         <Footer />
       </Router>
     </>

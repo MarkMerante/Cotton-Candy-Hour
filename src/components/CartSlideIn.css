@@ -32,6 +32,15 @@
   justify-content: space-around;
 }
 
+.cart-header .fa-times{
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.cart-header .fa-times:hover{
+  transform: scale(1.15);
+}
+
 .view-cart {
   display: flex;
   margin-top: 1px;

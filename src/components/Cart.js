@@ -10,7 +10,7 @@ const Cart = ({ cart, removeFromCart, clearCart }) => {
     cart.forEach((item) => {
       total += parseFloat(item.price.replace(/\$/g, ''))
     })
-    return total
+    return total.toFixed(2)
   }
 
   const [showInvoiceForm, setShowInvoiceForm] = useState(false);
