@@ -1,14 +1,19 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './ServicesHero.css'
+import ServicesTop from "../images/services-top.PNG"
 
 const ServicesHero = () => {
 
     return (
         <div className='services-hero-container'>
+            <div className='top-image'>
+                <img src={ServicesTop}  alt='Cotton Candy Tubs' />
+            </div>
             <div className='services-intro'>
                 <h1>SERVICES</h1>
-                <p>We often get the question, "What's your business about?". We offer a variety of services and personalize them into what we think would be best for each of our customers!</p>
+                <p>"What's your business about?"</p>
+                <p>We offer a variety of services and personalize them into what we think would be best for each of our customers!</p>
                 <br />
                 <br />
                 <p>Our main inquiries fall into the following categories:</p>
@@ -20,8 +25,8 @@ const ServicesHero = () => {
                             className='specials-list-image' 
                             src="images/special ocassions.JPG"/>
                         <br />
-                        <h3>SPECIAL OCCASIONS</h3>
-                        <span>Parties, gatherings, and other social events!</span>
+                        <h1>SPECIAL OCCASIONS</h1>
+                        <p>Parties, gatherings, and other social events!</p>
                     </div>
                 </Link>
                 <Link to="/services/fundraising" style={{ textDecoration: 'none' }}>
@@ -30,8 +35,8 @@ const ServicesHero = () => {
                             className='specials-list-image' 
                             src="images/fundraising.JPG"/>
                         <br />
-                        <h3>FUNDRAISING</h3>
-                        <span>Working for a good cause? Tell us about it!</span>
+                        <h1>FUNDRAISING</h1>
+                        <p>Working for a good cause? Tell us about it!</p>
                     </div>
                 </Link>
                 <Link to="/services/carnival" style={{ textDecoration: 'none' }}>
@@ -40,8 +45,8 @@ const ServicesHero = () => {
                             className='specials-list-image' 
                             src="images/carnival.JPG"/>
                         <br />
-                        <h3>CARNIVAL</h3>
-                        <span>Looking for a sweet attraction? This service would be perfect for you!</span>
+                        <h1>CARNIVAL</h1>
+                        <p>Looking for a sweet attraction? This service would be perfect for you!</p>
                     </div>
                 </Link>
             </div>

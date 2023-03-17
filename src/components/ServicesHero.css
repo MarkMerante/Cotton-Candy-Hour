@@ -1,15 +1,25 @@
 .services-hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 80%; */
+  margin: 0 auto 25vh;
 
+}
+
+.top-image{
+  margin-top: -20rem;
+  width:100%;
+  margin-bottom: 1.5rem;
+}
+
+.top-image img {
+  width: 100%;
 }
 
 .services-intro {
   text-align: center;
-  width: 55%
+  width: 90%
 }
 
 .services-intro h1{
@@ -21,7 +31,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 30px;
-  width: 100%
+  width: 95%
+
 }
 
 .specials-list {
@@ -47,14 +58,17 @@
     border-radius: 10px;
 }
 
-.specials-list h3 {
+.specials-list h1 {
   color:#ff1493;
   margin: 0;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-.specials-list span {
+.specials-list p {
   color:black;
+  font-weight: 100;
+  font-size: 1.2rem;
 }
 
 /* .specials-list span {
@@ -62,20 +76,51 @@
 } */
 
 @media screen and (max-width: 949px) {
-    .specials-list-container {
-        grid-template-columns: 1fr;
-    }
+  .top-image{
+    margin-top: -15rem;
+  }
+
+  .specials-list-container {
+    grid-template-columns: 1fr;
+  }
+
+  .specials-list h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 850px) {
+  .top-image{
+    margin-top: -12rem;
+  }
     .services-intro{
         width: 90%;
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
+  .top-image{
+    margin-top: -10rem;
+  }
     .services-intro{
-        text-align: left;
+        text-align: center;
     }
 }
-    
+
+@media screen and (max-width: 550px) {
+  .top-image{
+    margin-top: -8rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .top-image{
+    margin-top: -6rem;
+  }
+}   
+
+@media screen and (max-width: 320px) {
+  .top-image{
+    margin-top: -4rem;
+  }
+}   

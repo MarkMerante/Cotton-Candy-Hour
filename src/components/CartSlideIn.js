@@ -30,10 +30,13 @@ const CartSlideIn = ({ isOpen, handleClick1, cart, removeFromCart}) => {
   return (
     <div className={`cart-slide-in ${isOpen ? "show" : ""}`} ref={cartSlideInRef}>
       <div className="cart-header">
-        <Link to='/cart' className="view-cart" style={{ textDecoration: 'none' }}>
-          <button>View Cart</button>
-        </Link>
-        <i className="fas fa-times" onClick={handleClick1}/>
+        <h2>Total: ${totalPrice()}</h2>
+        <div className="cart-header-second-container">
+          <Link to='/cart' className="view-cart" style={{ textDecoration: 'none' }}>
+            <button>View Cart</button>
+          </Link>
+          <i className="fas fa-times" onClick={handleClick1}/>
+        </div>
       </div>
       <ul>
         {cart.map((item) => (
@@ -49,7 +52,7 @@ const CartSlideIn = ({ isOpen, handleClick1, cart, removeFromCart}) => {
           </li>
         ))}
       </ul>
-      <h2>Total: ${totalPrice()}</h2>
+      
     </div>
   );
 };

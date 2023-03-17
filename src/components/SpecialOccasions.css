@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Apricot';
+    src: url("../fonts/Apricot Regular.ttf") format('truetype');
+}
+
+.special-occasions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 25vh;
+}
+
+.special-occasions-intro {
+    width:95%;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: 5rem auto
+}
+
+.special-occasions-intro h1{
+    color:#ff1493;
+}
+
+.special-font{
+    font-family: 'Apricot','PT Sans', Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.special-occasions-catering-intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.special-occasions-catering-intro h2{
+    color:#ff1493;
+    background: linear-gradient(to right,#FAD4DF,#FAD4DF, #E4E4F0,#D9DAEE, #DBD2E7,#D9D1E9);
+    padding: .5em;
+    margin-bottom: 1.5rem;
+    width: 100%
+}
+
+.special-occasions-catering-pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3em 2em;
+    gap: .5em;
+    align-content: start;
+    align-items: flex-start;
+}
+
+.special-occasions-catering-pricing > div:nth-child(1){
+    border: 3px solid #40C2E3;
+    background-color: #E7FAFE;
+}
+
+.special-occasions-catering-pricing > div:nth-child(2) {
+    border: 3px solid #ff1493;
+    background-color: #FDE7F4;
+}
+
+.special-occasions-catering-pricing > div:nth-child(3) {
+    border: 3px solid #912CCC;
+    background-color: #F6E6FF;
+}
+
+.special-occasions-contents {
+    width:80%;
+    margin: 0 auto;
+}
+
+.special-occasions-contents span{
+    font-size: .8em;
+}
+
+.sc-contents-intro {
+    text-align: center;
+    margin: 1.5em auto;
+}
+
+.hourly-rate-price span{
+    margin-top: 1.5em;
+}
+
+.hourly-rate-price {
+    display: flex;
+    justify-content: center;
+}
+
+.sc-contents-main-price, .hourly-rate-price {
+    margin: 0 auto 1.5em;
+    text-align: center;
+}
+
+.sc-contents-main-price{
+    margin-bottom: .7em;
+}
+
+.sc-contents-main-price {
+    font-size: 2rem;
+}
+
+.hourly-rate-price h2{
+    font-size: 2rem;
+}
+
+.sc-dropdown {
+    padding: .2rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sc-dropdown i {
+    color: white;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.sc-dropdown h3 {
+    font-family: "PT Sans",Arial, Helvetica, sans-serif ;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 18px;
+}
+
+.special-button {
+    margin: 1.8rem 0;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+.special-button:hover{
+    transform: scale(1.2);
+}
+
+.first > h2:nth-child(2){
+    color: #18BCD4;
+}
+
+.first .special-font {
+    color: #40C2E3;
+}
+
+.first .sc-dropdown {
+    background: #02CEFF;
+}
+
+.first .special-button {
+    background: #B4F2FF;
+    color: #40C2E3;
+    border: 3px solid #40C2E3;
+}
+
+.second > div:nth-child(2) {
+    color: #ff1493;
+}
+
+.second .special-font{
+    color: #ff1493;
+}
+
+.second .sc-dropdown {
+    background: #ff1493;
+}
+
+.second .special-button{
+    background: #FEB9E5;
+    color: #ff1493;
+    border: 3px solid #ff1493;
+}
+
+.third > h2:nth-child(2) {
+    color: #6A15C1;
+}
+
+.third .special-font {
+    color: #6A15C1;
+}
+
+.third .sc-dropdown {
+    background: #9B01FF;
+}
+
+.third .special-button{
+    background: #E5B5FF;
+    color: #6A15C1;
+    border: 3px solid #6A15C1;
+}
+
+.optional {
+    color: gray;
+    font-style: italic;
+}
+
+.special-occasions-statement {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 4em;
+}
+
+@media screen and (max-width: 650px) {
+    .special-occasions-catering-pricing {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
