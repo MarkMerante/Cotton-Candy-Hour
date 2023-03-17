@@ -32,8 +32,8 @@ const CartSlideIn = ({ isOpen, handleClick1, cart, removeFromCart}) => {
       <div className="cart-header">
         <h2>Total: ${totalPrice()}</h2>
         <div className="cart-header-second-container">
-          <Link to='/cart' className="view-cart" style={{ textDecoration: 'none' }}>
-            <button>View Cart</button>
+          <Link to='/cart' className="view-cart" style={{ textDecoration: 'none' }} onClick={handleClick1}>
+            <button onClick={handleClick1}>View Cart </button>
           </Link>
           <i className="fas fa-times" onClick={handleClick1}/>
         </div>
