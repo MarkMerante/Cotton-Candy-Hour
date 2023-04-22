@@ -22,7 +22,6 @@ function Fundraising() {
                 <p>Hesitating to reach out?</p>
                 <p>Submit a summary of your upcoming event along with your organization's goals and intentions, and we can start there!</p>
             </div>
-
         </div>
     )
 }

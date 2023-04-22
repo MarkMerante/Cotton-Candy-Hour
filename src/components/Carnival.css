@@ -1,0 +1,48 @@
+.carnival-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 25vh;
+}
+
+.carnival-intro {
+    width:95%;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: 5rem auto;
+    margin-bottom: -1em;
+}
+
+.carnival-intro > :nth-child(1) {
+    color: #ff1493
+}
+
+.carnival-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.carnival-img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carnival-statement, .carnival-closing-statement {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 4em;
+}
+
+.carnival-closing-statement > :nth-child(1) {
+    font-weight: bolder;
+    margin-bottom: 1em;
+}
+
+.carnival-closing-statement > :nth-child(2) {
+    font-size: small;
+}
+
+.carnival-closing-statement {
+    margin-bottom: -2em;
+}
