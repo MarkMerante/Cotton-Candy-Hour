@@ -104,7 +104,7 @@ const ClassicProduct = ({ addToCart }) => {
                             </p>
                             <p>
                               If a cotton candy tub has been opened, ensure container is properly sealed to prevent air from entering to delay hardening of the sugar.
-                              This is best eaten within 3 days
+                              This is best eaten within 3 days.
                             </p>
                             <p>
                               Keep at room temperature or slightly cool, but do not keep in heat or extreme cold for long periods
